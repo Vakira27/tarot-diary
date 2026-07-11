@@ -4,23 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Волшебный дневник таролога</title>
-    <!-- Подключаем React, Tailwind и анимации -->
     <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-[#F7F4EB] min-h-screen text-[#5a4a3a]">
-    <div id="root"></div>
+    <div id="root" style="padding: 40px; text-align: center; font-family: sans-serif;">
+        <h2>Загрузка дневника таро...</h2>
+    </div>
 
-    <script type="text/babel">
-        // Сюда вставляем твой код из файла .jsx, предварительно убрав строчки import в самом начале
-        // (например, import React... и import { ... } from 'lucide-react')
-
-        // ТВОЙ КОД ВСТАВЛЯТЬ СЮДА:
-        
-        // В самом конце файла убедись, что запуск идет через рендер:
-        // ReactDOM.createRoot(document.getElementById('root')).render(<TarotDiaryApp />);
-    </script>
+    <!-- Загружаем твой файл с кодом -->
+    <script type="text/babel" src="./app.jsx"></script>
 </body>
 </html>
