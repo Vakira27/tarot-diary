@@ -1,5 +1,4 @@
 
-
 const DECKS = [
   { id: 'waite', name: 'Уэйт' },
   { id: 'thoth', name: 'Тот' },
