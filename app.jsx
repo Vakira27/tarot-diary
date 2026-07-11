@@ -1,30 +1,4 @@
-import React, { useState, useEffect, useRef, useCallback } from 'react';
-import {
-  Search, Plus, X, RotateCw, ChevronLeft, ChevronDown, Sparkles, Download, Upload,
-  User, AlertCircle, BarChart2, Menu, ArrowLeft, BookOpen, Star, Moon,
-  Trash2, Loader2, Check, ZoomIn, ZoomOut, Maximize2, Flame, Save, Pencil
-} from 'lucide-react';
 
-// =====================================================================================
-// ИНТЕГРАЦИЯ ФАЙЛОВ — ЧИТАЙТЕ ПЕРЕД ЗАПУСКОМ В ВАШЕМ ПРОЕКТЕ
-// =====================================================================================
-// 1. Логотип: положите файл  public/assets/logo.png
-//
-// 2. Картинки карт: создайте папку  public/assets/cards/<id-колоды>/
-//    и положите туда файлы вида:
-//      00-fool.jpg, 01-magician.jpg, ... (Старшие Арканы)
-//      wands-ace.jpg, wands-02.jpg, ... wands-page.jpg, wands-knight.jpg, wands-queen.jpg, wands-king.jpg
-//      cups-ace.jpg ... pentacles-king.jpg  (аналогично для cups / swords / pentacles)
-//    Пример: public/assets/cards/waite/wands-ace.jpg
-//    Если файла нет — показывается декоративная заглушка.
-//
-// 3. dnd-kit и framer-motion недоступны в песочнице Artifacts (их нет в списке
-//    разрешённых пакетов), поэтому drag-and-drop, зум/пан холста и все "живые"
-//    анимации (взлёт карты, 3D-переворот, проступающие чернила, переход между
-//    страницами) реализованы на нативных pointer-событиях + CSS-переходах/keyframes.
-//    В своём проекте это можно один в один заменить на dnd-kit / framer-motion /
-//    react-zoom-pan-pinch, сохранив ту же логику состояний.
-// =====================================================================================
 
 const DECKS = [
   { id: 'waite', name: 'Уэйт' },
